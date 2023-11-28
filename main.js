@@ -15,7 +15,7 @@ const transaction = Sentry.startTransaction({
   
   setTimeout(() => {
     try {
-      const rand = Math.floor(Math.random() * 10);
+      const rand = Math.floor(Math.random() * 2);
       if (rand == 0) {
         wowee();
       } else {
