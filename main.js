@@ -1,7 +1,7 @@
 const Sentry = require("@sentry/node");
 
 Sentry.init({
-  dsn: 'https://47a5b22f68b02f5fc80a0f5e10b092a9@o4505647181266944.ingest.sentry.io/4506300503425024',
+  dsn: 'https://b070dad593840b171d307dbb38de729f@o4505365730885632.ingest.sentry.io/4506305809088512',
   // Performance Monitoring
   tracesSampleRate: 1.0,
   // Set sampling rate for profiling - this is relative to tracesSampleRate
