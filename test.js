@@ -15,7 +15,7 @@ const transaction = Sentry.startTransaction({
   
   setTimeout(() => {
     try {
-      bufo();
+      yellow();
     } catch (e) {
       Sentry.captureException(e);
     } finally {
