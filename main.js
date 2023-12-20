@@ -17,7 +17,7 @@ const transaction = Sentry.startTransaction({
     try {
       const rand = Math.floor(Math.random() * 2);
       if (rand == 0) {
-        wowee();
+        heehee();
       } else {
         wave();
       }
