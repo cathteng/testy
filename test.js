@@ -15,7 +15,6 @@ function yellow(beep) {
   l = 3
   console.log(i/j)
   console.log(k == 3)
-  print(k*l)
   j/i
 }
 
