@@ -8,6 +8,37 @@ Sentry.init({
   profilesSampleRate: 1.0,
 });
 
+const wowee = () => {
+  // Lorem ipsum dolor sit amet, consectetur 
+  // adipiscing elit. Vestibulum commodo nunc 
+  // vitae lacus molestie fringilla. Aenean 
+  // luctus magna nec tempus bibendum. Etiam 
+  // molestie, neque at efficitur placerat, nibh 
+  // orci tincidunt mi, fermentum blandit ligula 
+  // mi luctus tellus. Nullam venenatis diam 
+  // ultricies, euismod ex sed, suscipit turpis. 
+  // Vivamus porta augue magna, at consequat leo 
+  // molestie at. In non sollicitudin massa, in 
+  // tincidunt ipsum. Aliquam erat volutpat. 
+  // Mauris tortor sem, lacinia nec viverra eget, 
+  // sollicitudin sit amet diam. Pellentesque a 
+  // nulla a ante blandit sagittis. 
+  console.log("in here");
+  const i = 0
+  const j = 1
+  return hello();
+}
+
+function wave() {
+  const d = 5;
+  const c = 3.14 * d;
+  console.log(d)
+  console.log(c)
+  console.log("hello server")
+  // this raises an error
+  throw new Error("error");
+}
+
 const transaction = Sentry.startTransaction({
     op: "test",
     name: "My First Test Transaction",
@@ -23,6 +54,7 @@ const transaction = Sentry.startTransaction({
       }
     } catch (e) {
       Sentry.captureException(e);
+      console.log(e);
     } finally {
       transaction.finish();
     }

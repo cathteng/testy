@@ -8,6 +8,17 @@ Sentry.init({
   profilesSampleRate: 1.0,
 });
 
+function yellow(beep) {
+  i = 0
+  j = 1
+  k = 2
+  l = 3
+  console.log(i/j)
+  console.log(k == 3)
+  print(k*l)
+  j/i
+}
+
 const transaction = Sentry.startTransaction({
     op: "test",
     name: "My First Test Transaction",
@@ -18,6 +29,7 @@ const transaction = Sentry.startTransaction({
       yellow();
     } catch (e) {
       Sentry.captureException(e);
+      console.log(e);
     } finally {
       transaction.finish();
     }
