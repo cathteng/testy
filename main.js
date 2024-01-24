@@ -9,9 +9,7 @@ Sentry.init({
 });
 
 const wowee = () => {
-  // Lorem ipsum dolor sit amet, consectetur 
-  // adipiscing elit. Vestibulum commodo nunc 
-  // vitae lacus molestie fringilla. Aenean 
+  // Aenean 
   // luctus magna nec tempus bibendum. Etiam 
   // molestie, neque at efficitur placerat, nibh 
   // orci tincidunt mi, fermentum blandit ligula 
@@ -36,7 +34,7 @@ function wave() {
   console.log(c)
   console.log("hello server")
   // this raises an error
-  throw new Error("error");
+  return "hello there";
 }
 
 const transaction = Sentry.startTransaction({
