@@ -25,12 +25,5 @@ const transaction = Sentry.startTransaction({
   });
   
   setTimeout(() => {
-    try {
       yellow();
-    } catch (e) {
-      Sentry.captureException(e);
-      console.log(e);
-    } finally {
-      transaction.finish();
-    }
   }, 99);
