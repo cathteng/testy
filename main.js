@@ -45,17 +45,10 @@ const transaction = Sentry.startTransaction({
   });
   
   setTimeout(() => {
-    try {
       const rand = Math.floor(Math.random() * 2);
       if (rand == 0) {
         wowee();
       } else {
         wave();
       }
-    } catch (e) {
-      Sentry.captureException(e);
-      console.log(e);
-    } finally {
-      transaction.finish();
-    }
   }, 99);
